@@ -11,11 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
-import os 
-import dotenv
+# from decouple import config
+# import os 
+# import dotenv
 
-dotenv.load_dotenv()
+# dotenv.load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -84,12 +84,12 @@ WSGI_APPLICATION = 'user_manager.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
@@ -148,24 +148,24 @@ SPECTACULAR_SETTINGS = {
 }
 
 
-name = os.environ.get('DATABASE_NAME')
-user = os.environ.get('DATABASE_USER')
-password = os.environ.get('DATABASE_PASSWORD')
-host = os.environ.get('DATABASE_HOST')
-port = os.environ.get('DATABASE_PORT')
+# name = os.environ.get('DATABASE_NAME')
+# user = os.environ.get('DATABASE_USER')
+# password = os.environ.get('DATABASE_PASSWORD')
+# host = os.environ.get('DATABASE_HOST')
+# port = os.environ.get('DATABASE_PORT')
 
 
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql.psycopg2',
-        'NAME': config('name'),
-        'USER': config('user'),
-        'PASSWORD': config('password'),
-        'HOST': config('host'),
-        'PORT': config('port'),
-    }
-}
+#   DATABASES = {
+    # 'default': {
+        # 'ENGINE': 'django.db.backends.postgresql',
+#         # 'NAME': config('name'),
+#         'USER': config('user'),
+#         'PASSWORD': config('password'),
+#         'HOST': config('host'),
+#         'PORT': config('port'),
+#     }
+# }
 
 
