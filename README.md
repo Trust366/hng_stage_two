@@ -20,7 +20,7 @@ database: dbsqlite
 
 ### Find Person (GET)
 
-Route: /api/:userID
+Route: /api/:ID
 
 Method: GET
 
@@ -28,15 +28,15 @@ Description: Retrieves a person's information using their userID.
 
 ### Update Person (PUT)
 
-Route: /api/:userID
+Route: /api/:ID
 
-Method: PUT
+Method: PUT and PATCH
 
 Description: Updates a person's details.
 
 ### Delete Person (DELETE)
 
-Route: /api/:userID
+Route: /api/:ID
 
 Method: DELETE
 
