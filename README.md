@@ -40,3 +40,6 @@ Route: /api/:userID
 
 Method: DELETE
 
+### UML diagram
+https://lucid.app/lucidchart/097e1f1f-1609-46c6-92f4-335d42a8476a/edit?viewport_loc=-11%2C-11%2C1480%2C697%2C0_0&invitationId=inv_82b2ac9a-7f8a-4cbe-9126-48d8803d1793
+
